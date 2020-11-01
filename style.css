@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #ccc;
+    font-family: 'Staatliches', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+    background-color: turquoise;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    background-color: rgb(224, 166, 226);
+    padding: 20px;
+}
+
+form button,
+form input {
+    background: white;
+    border: none;
+    padding: 5px;
+    font-size: large;
+    height: 50px;
+}
+
+form input {
+    width: 450px
+}
+
+form button {
+    width: 50px;
+}
+
+.main button {
+    cursor: pointer;
+}
+
+.fa-minus-square,
+.fa-check-square {
+    pointer-events: none;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.todo-div {
+    display: flex;
+    background-color: rgb(106, 190, 190);
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.todo-list {
+    text-decoration: none;
+}
+
+.todo-item {
+    text-decoration: none;
+    list-style-type: none;
+    height: 20px;
+    width: 500px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 40px;
+    align-content: space-around;
+}
+
+.finish-item {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-minus-square {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#checked {
+    color: pink;
+    text-decoration: line-through;
+    text-decoration-color: tomato;
+}
+
+#todo-input:focus {
+    outline-style: none;
+}
